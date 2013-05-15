@@ -25,15 +25,15 @@ our $VERSION = '0.01';
 
 Uninets::Check::Modules::File is able to check file size, modification times, content and more.
 
-	# to show available information on parameters run
-	unicheck --info File
+    # to show available information on parameters run
+    unicheck --info File
 
 =cut
 
 sub run {
-	my ($self, $action, @params) = @_;
+    my ($self, $action, @params) = @_;
 
-	$self->$action(@params);
+    $self->$action(@params);
 }
 
 =head1 ACTIONS
@@ -42,12 +42,12 @@ sub run {
 
 Check if a file exists/is accessable.
 
-	unicheck File exists --path /path/to/file
+    unicheck File exists --path /path/to/file
 
 =cut
 
 sub exists {
-	my ($self, @params) = @_;
+    my ($self, @params) = @_;
     # TODO
 }
 
@@ -55,12 +55,12 @@ sub exists {
 
 Get the size of a file in bytes.
 
-	unicheck File size --path /path/to/file
+    unicheck File size --path /path/to/file
 
 =cut
 
 sub size {
-	my ($self, @params) = @_;
+    my ($self, @params) = @_;
     # TODO
 }
 
@@ -68,12 +68,12 @@ sub size {
 
 Get the last modification time as timestamp.
 
-	unicheck File mtime --path /path/to/file
+    unicheck File mtime --path /path/to/file
 
 =cut
 
 sub mtime {
-	my ($self, @params) = @_;
+    my ($self, @params) = @_;
     # TODO
 }
 
@@ -81,80 +81,80 @@ sub mtime {
 
 Check content against a string or regex.
 
-	unicheck File content --path /path/to/file --match 'unicheck\sis\s+easy.*use' --flags g
+    unicheck File content --path /path/to/file --match 'unicheck\sis\s+easy.*use' --flags g
 
 =cut
 
 sub content {
-	my ($self, @params) = @_;
+    my ($self, @params) = @_;
     # TODO
 }
 
 sub _return {
-	my ($self, $status, $value, $format) = @_;
+    my ($self, $status, $value, $format) = @_;
 
-	return JSON->new->encode(
-		{
-			message => $value,
-			status  => $status,
-		}
-	) if $format eq 'json';
-	# default last in case some non supported format was given
-	return $status; # if $format eq 'num'
+    return JSON->new->encode(
+        {
+            message => $value,
+            status  => $status,
+        }
+    ) if $format eq 'json';
+    # default last in case some non supported format was given
+    return $status; # if $format eq 'num'
 }
 
 sub help {
-	{
-		description => 'Check web server and web app status',
-		actions => {
-			exists => {
-				description => 'Checks existence',
-				params => {
-					'--path'       => 'Mandatory path information',
-				},
-				formats => {
-					'num'  => 'Returns 1 if the file exists, 0 otherwise',
-					'json' => 'Returns a JSON structure',
-				},
-				default_format => 'num',
-			},
-			size => {
-				description => 'Get file size',
-				params => {
-					'--path'       => 'Mandatory path information',
-				},
-				formats => {
-					'num'  => 'Returns the size in byte',
-					'json' => 'Returns a JSON structure',
-				},
-				default_format => 'num',
-			},
-			mtime => {
-				description => 'Get last modification time',
-				params => {
-					'--path'       => 'Mandatory path information',
-				},
-				formats => {
-					'num'  => 'Returns the timestamp',
-					'json' => 'Returns a JSON structure',
-				},
-				default_format => 'num',
-			},
-			content => {
-				description => 'Check if content matches',
-				params => {
-					'--path'       => 'Mandatory path information',
-					'--match'      => 'Regular expresson (Beware, regexes can contain exacutable code!)',
+    {
+        description => 'Check web server and web app status',
+        actions => {
+            exists => {
+                description => 'Checks existence',
+                params => {
+                    '--path'       => 'Mandatory path information',
+                },
+                formats => {
+                    'num'  => 'Returns 1 if the file exists, 0 otherwise',
+                    'json' => 'Returns a JSON structure',
+                },
+                default_format => 'num',
+            },
+            size => {
+                description => 'Get file size',
+                params => {
+                    '--path'       => 'Mandatory path information',
+                },
+                formats => {
+                    'num'  => 'Returns the size in byte',
+                    'json' => 'Returns a JSON structure',
+                },
+                default_format => 'num',
+            },
+            mtime => {
+                description => 'Get last modification time',
+                params => {
+                    '--path'       => 'Mandatory path information',
+                },
+                formats => {
+                    'num'  => 'Returns the timestamp',
+                    'json' => 'Returns a JSON structure',
+                },
+                default_format => 'num',
+            },
+            content => {
+                description => 'Check if content matches',
+                params => {
+                    '--path'       => 'Mandatory path information',
+                    '--match'      => 'Regular expresson (Beware, regexes can contain exacutable code!)',
                     '--flags'      => 'Regex flags',
-				},
-				formats => {
-					'num'  => 'Returns count of matches',
-					'json' => 'Returns a JSON structure',
-				},
-				default_format => 'num',
-			},
-		},
-	}
+                },
+                formats => {
+                    'num'  => 'Returns count of matches',
+                    'json' => 'Returns a JSON structure',
+                },
+                default_format => 'num',
+            },
+        },
+    }
 }
 
 
