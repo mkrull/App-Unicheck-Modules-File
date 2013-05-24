@@ -1,6 +1,6 @@
 # NAME
 
-App::Unicheck::Modules::File - App::Unicheck module to check files.
+App::Unicheck::Modules::File - App::Unicheck module to check files. [![Build Status](https://secure.travis-ci.org/uninets/App-Unicheck-Modules-File.png)](http://travis-ci.org/uninets/App-Unicheck-Modules-File)
 
 # VERSION
 
