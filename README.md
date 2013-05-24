@@ -1,6 +1,6 @@
 # NAME
 
-Uninets::Check::Modules::File - Uninets::Check module to check files.
+App::Unicheck::Modules::File - App::Unicheck module to check files.
 
 # VERSION
 
@@ -8,7 +8,7 @@ Version 0.01
 
 # SYNOPSIS
 
-Uninets::Check::Modules::File is able to check file size, modification times, content and more.
+App::Unicheck::Modules::File is able to check file size, modification times, content and more.
 
 	# to show available information on parameters run
 	unicheck --info File
@@ -45,8 +45,8 @@ Matthias Krull, `<<m.krull at uninets.eu>>`
 
 # BUGS
 
-Please report any bugs or feature requests to `bug-uninets-check-modules-file at rt.cpan.org`, or through
-the web interface at [http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Uninets-Check-Modules-File](http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Uninets-Check-Modules-File).  I will be notified, and then you'll
+Please report any bugs or feature requests to `bug-app-unicheck-modules-file at rt.cpan.org`, or through
+the web interface at [http://rt.cpan.org/NoAuth/ReportBug.html?Queue=App-Unicheck-Modules-File](http://rt.cpan.org/NoAuth/ReportBug.html?Queue=App-Unicheck-Modules-File).  I will be notified, and then you'll
 automatically be notified of progress on your bug as I make changes.
 
 
@@ -59,7 +59,7 @@ automatically be notified of progress on your bug as I make changes.
 
 You can find documentation for this module with the perldoc command.
 
-    perldoc Uninets::Check::Modules::File
+    perldoc App::Unicheck::Modules::File
 
 
 
@@ -67,23 +67,23 @@ You can also look for information at:
 
 - RT: CPAN's request tracker (report bugs here)
 
-    [http://rt.cpan.org/NoAuth/Bugs.html?Dist=Uninets-Check-Modules-File](http://rt.cpan.org/NoAuth/Bugs.html?Dist=Uninets-Check-Modules-File)
+    [http://rt.cpan.org/NoAuth/Bugs.html?Dist=App-Unicheck-Modules-File](http://rt.cpan.org/NoAuth/Bugs.html?Dist=App-Unicheck-Modules-File)
 
 - AnnoCPAN: Annotated CPAN documentation
 
-    [http://annocpan.org/dist/Uninets-Check-Modules-File](http://annocpan.org/dist/Uninets-Check-Modules-File)
+    [http://annocpan.org/dist/App-Unicheck-Modules-File](http://annocpan.org/dist/App-Unicheck-Modules-File)
 
 - CPAN Ratings
 
-    [http://cpanratings.perl.org/d/Uninets-Check-Modules-File](http://cpanratings.perl.org/d/Uninets-Check-Modules-File)
+    [http://cpanratings.perl.org/d/App-Unicheck-Modules-File](http://cpanratings.perl.org/d/App-Unicheck-Modules-File)
 
 - Search CPAN
 
-    [http://search.cpan.org/dist/Uninets-Check-Modules-File/](http://search.cpan.org/dist/Uninets-Check-Modules-File/)
+    [http://search.cpan.org/dist/App-Unicheck-Modules-File/](http://search.cpan.org/dist/App-Unicheck-Modules-File/)
 
 - Github
 
-    [http://github.com/uninets/Uninets-Check-Modules-File/](http://github.com/uninets/Uninets-Check-Modules-File/)
+    [http://github.com/uninets/App-Unicheck-Modules-File/](http://github.com/uninets/App-Unicheck-Modules-File/)
 
 
 

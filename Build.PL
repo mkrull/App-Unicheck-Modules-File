@@ -4,7 +4,7 @@ use warnings FATAL => 'all';
 use Module::Build;
 
 my $builder = Module::Build->new(
-    module_name         => 'Uninets::Check::Modules::File',
+    module_name         => 'App::Unicheck::Modules::File',
     license             => 'Artistic_2_0',
     dist_author         => q{Matthias Krull <<m.krull@uninets.eu>>},
     dist_version_from   => 'lib/Uninets/Check/Modules/File.pm',
@@ -19,7 +19,7 @@ my $builder = Module::Build->new(
         'perl' => '5.10.1',
         'JSON' => 0,
     },
-    add_to_cleanup     => [ 'Uninets-Check-Modules-File-* Build _build MYMETA.*' ],
+    add_to_cleanup     => [ 'App-Unicheck-Modules-File-* Build _build MYMETA.*' ],
     create_makefile_pl => 'traditional',
 
     meta_add => {
@@ -28,7 +28,7 @@ my $builder = Module::Build->new(
     },
     meta_merge => {
         resources => {
-            repository => 'https://github.com/uninets/Uninets-Check-Modules-File',
+            repository => 'https://github.com/uninets/App-Unicheck-Modules-File',
         }
     }
 );

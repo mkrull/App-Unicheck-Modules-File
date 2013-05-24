@@ -1,5 +1,5 @@
 ---
-abstract: 'Uninets::Check module to check files.'
+abstract: 'App::Unicheck module to check files.'
 author:
   - 'Matthias Krull <<m.krull@uninets.eu>>'
 build_requires:
@@ -12,12 +12,12 @@ license: artistic_2
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
-name: Uninets-Check-Modules-File
+name: App-Unicheck-Modules-File
 no_index:
   directory:
     - t
 provides:
-  Uninets::Check::Modules::File:
+  App::Unicheck::Modules::File:
     file: lib/Uninets/Check/Modules/File.pm
     version: 0.01
 requires:
@@ -26,5 +26,5 @@ requires:
   perl: v5.10.1
 resources:
   license: http://www.perlfoundation.org/artistic_license_2_0
-  repository: https://github.com/uninets/Uninets-Check-Modules-File
+  repository: https://github.com/uninets/App-Unicheck-Modules-File
 version: 0.01

@@ -1,4 +1,4 @@
-package Uninets::Check::Modules::File;
+package App::Unicheck::Modules::File;
 
 use 5.10.1;
 use strict;
@@ -10,7 +10,7 @@ use JSON;
 
 =head1 NAME
 
-Uninets::Check::Modules::File - Uninets::Check module to check files.
+App::Unicheck::Modules::File - App::Unicheck module to check files.
 
 =head1 VERSION
 
@@ -23,7 +23,7 @@ our $VERSION = '0.01';
 
 =head1 SYNOPSIS
 
-Uninets::Check::Modules::File is able to check file size, modification times, content and more.
+App::Unicheck::Modules::File is able to check file size, modification times, content and more.
 
     # to show available information on parameters run
     unicheck --info File
@@ -164,8 +164,8 @@ Matthias Krull, C<< <<m.krull at uninets.eu>> >>
 
 =head1 BUGS
 
-Please report any bugs or feature requests to C<bug-uninets-check-modules-file at rt.cpan.org>, or through
-the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Uninets-Check-Modules-File>.  I will be notified, and then you'll
+Please report any bugs or feature requests to C<bug-app-unicheck-modules-file at rt.cpan.org>, or through
+the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=App-Unicheck-Modules-File>.  I will be notified, and then you'll
 automatically be notified of progress on your bug as I make changes.
 
 
@@ -175,7 +175,7 @@ automatically be notified of progress on your bug as I make changes.
 
 You can find documentation for this module with the perldoc command.
 
-    perldoc Uninets::Check::Modules::File
+    perldoc App::Unicheck::Modules::File
 
 
 You can also look for information at:
@@ -184,23 +184,23 @@ You can also look for information at:
 
 =item * RT: CPAN's request tracker (report bugs here)
 
-L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=Uninets-Check-Modules-File>
+L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=App-Unicheck-Modules-File>
 
 =item * AnnoCPAN: Annotated CPAN documentation
 
-L<http://annocpan.org/dist/Uninets-Check-Modules-File>
+L<http://annocpan.org/dist/App-Unicheck-Modules-File>
 
 =item * CPAN Ratings
 
-L<http://cpanratings.perl.org/d/Uninets-Check-Modules-File>
+L<http://cpanratings.perl.org/d/App-Unicheck-Modules-File>
 
 =item * Search CPAN
 
-L<http://search.cpan.org/dist/Uninets-Check-Modules-File/>
+L<http://search.cpan.org/dist/App-Unicheck-Modules-File/>
 
 =item * Github
 
-L<http://github.com/uninets/Uninets-Check-Modules-File/>
+L<http://github.com/uninets/App-Unicheck-Modules-File/>
 
 =back
 
@@ -251,4 +251,4 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 =cut
 
-1; # End of Uninets::Check::Modules::File
+1; # End of App::Unicheck::Modules::File
