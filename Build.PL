@@ -7,7 +7,7 @@ my $builder = Module::Build->new(
     module_name         => 'App::Unicheck::Modules::File',
     license             => 'artistic_2',
     dist_author         => q{Matthias Krull <<m.krull@uninets.eu>>},
-    dist_version_from   => 'lib/Uninets/Check/Modules/File.pm',
+    dist_version_from   => 'lib/App/Unicheck/Modules/File.pm',
     configure_requires => {
         'Module::Build' => 0,
     },
